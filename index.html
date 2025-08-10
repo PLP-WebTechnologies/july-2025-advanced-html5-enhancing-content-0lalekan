@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Content & Forms Mastery</title>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Content & Forms Mastery</h1>
+        <p>Learn to create structured content and interactive forms with HTML5</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Organizing Content with Lists</h2>
+            
+            <h3>Unordered List (Web Technologies)</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>Web Accessibility</li>
+            </ul>
+            
+            <h3>Ordered List (Learning Steps)</h3>
+            <ol>
+                <li>Understand basic HTML structure</li>
+                <li>Learn semantic elements</li>
+                <li>Practice creating forms</li>
+                <li>Add validation to forms</li>
+                <li>Test your web pages</li>
+            </ol>
+            
+            <h3>Description List (HTML Terms)</h3>
+            <dl>
+                <dt>Semantic Elements</dt>
+                <dd>HTML tags that clearly describe their meaning to both the browser and developer</dd>
+                
+                <dt>Form Validation</dt>
+                <dd>The process of ensuring user input meets specified requirements</dd>
+                
+                <dt>Accessibility</dt>
+                <dd>Designing websites to be usable by people with disabilities</dd>
+            </dl>
+        </section>
+        
+        <section>
+            <h2>Presenting Data with Tables</h2>
+            
+            <table border="1">
+                <caption>Web Development Learning Path</caption>
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                        <th>Time Required</th>
+                        <th>Resources</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Beginner</td>
+                        <td>2 weeks</td>
+                        <td>MDN Web Docs</td>
+                    </tr>
+                    <tr>
+                        <td>CSS3</td>
+                        <td>Beginner</td>
+                        <td>3 weeks</td>
+                        <td>W3Schools</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Intermediate</td>
+                        <td>4 weeks</td>
+                        <td>freeCodeCamp</td>
+                    </tr>
+                    <tr>
+                        <td>Responsive Design</td>
+                        <td>Intermediate</td>
+                        <td>2 weeks</td>
+                        <td>CSS-Tricks</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Total estimated learning time: 11 weeks</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        
+        <section>
+            <h2>Embedding Media Content</h2>
+            
+            <h3>Images</h3>
+            <figure>
+                <!-- Replaced placeholder with a working image URL -->
+                <img src="https://picsum.photos/400/200" alt="Random Image for Web Development Concept" width="400" height="200">
+                <figcaption>A visual representation of web development concepts.</figcaption>
+            </figure>
+            
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Sample: Introduction to Web Development Principles</p>
+            
+            <h3>Video</h3>
+            <!-- Replaced YouTube iframe with a standard HTML5 video element and a direct video file link -->
+            <video controls width="400" poster="https://picsum.photos/400/225?grayscale">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Video Tutorial: Building Accessible HTML Forms</p>
+        </section>
+        
+        <section>
+            <h2>Submit your Web Development Class Application Form</h2>
+            
+            <form id="registration-form" action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <p>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required
+                               placeholder="Enter your full name" minlength="3" maxlength="50">
+                    </p>
+                    
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required
+                               placeholder="your.email@example.com"
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    </p>
+                    
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required
+                               placeholder="123-456-7890"
+                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </p>
+                    
+                    <p>
+                        <label for="birthdate">Date of Birth:</label>
+                        <input type="date" id="birthdate" name="birthdate" required
+                               min="1920-01-01" max="2020-01-01">
+                    </p>
+                    
+                    <p>
+                        <label for="website">Personal Website:</label>
+                        <input type="url" id="website" name="website"
+                               placeholder="https://yourwebsite.com">
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Account Details</legend>
+                    
+                    <p>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required
+                               placeholder="Choose a username (max: 20 character)" minlength="4" maxlength="20">
+                    </p>
+                    
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required
+                               placeholder="Create a password (min: 8 characters)" minlength="8">
+                    </p>
+                    
+                    <p>
+                        <label for="password-confirm">Confirm Password:</label>
+                        <input type="password" id="password-confirm" name="password-confirm" required
+                               placeholder="Confirm your password (must be same with password)">
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Preferences</legend>
+                    
+                    <p>
+                        <label>Experience Level:</label><br>
+                        <input type="radio" id="beginner" name="experience" value="beginner" required>
+                        <label for="beginner">Beginner</label>
+                        
+                        <input type="radio" id="intermediate" name="experience" value="intermediate">
+                        <label for="intermediate">Intermediate</label>
+                        
+                        <input type="radio" id="advanced" name="experience" value="advanced">
+                        <label for="advanced">Advanced</label>
+                    </p>
+                    
+                    <p>
+                        <label>Interests:</label><br>
+                        <input type="checkbox" id="html" name="interest" value="html">
+                        <label for="html">HTML</label>
+                        
+                        <input type="checkbox" id="css" name="interest" value="css">
+                        <label for="css">CSS</label>
+                        
+                        <input type="checkbox" id="js" name="interest" value="js">
+                        <label for="js">JavaScript</label>
+                    </p>
+                    
+                    <p>
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="">Select your country</option>
+                            <option value="us">Nigeria</option>
+                            <option value="ca">Kenya</option>
+                            <option value="uk">Morocco</option>
+                            <option value="au">South Africa</option>
+                            <option value="nz">Ghana</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="avatar">Profile Picture:</label>
+                        <input type="file" id="avatar" name="avatar" accept="image/*">
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <p>
+                        <label for="feedback">Feedback:</label><br>
+                        <textarea id="feedback" name="feedback" rows="4" cols="50"
+                                  placeholder="Share your thoughts..."
+                                  minlength="10" maxlength="500"></textarea>
+                    </p>
+                    
+                    <p>
+                        <label for="newsletter">Subscribe to Newsletter:</label>
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    </p>
+                    
+                    <p>
+                        <label for="reference">Reference ID:</label>
+                        <input type="text" id="reference" name="reference" value="WEB12345" readonly>
+                    </p>
+                </fieldset>
+                
+                <p>
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>HTML5 Content & Forms</p>
+        <p>Created by Olalekan</p>
+    </footer>
+</body>
+</html>
